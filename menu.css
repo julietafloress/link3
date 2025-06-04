@@ -1,0 +1,91 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  margin-top: 20px;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #79b3f8;
+}
+
+.button-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 250px;
+}
+
+.button-list a {
+  background-color: #79b3f8;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: transform 0.3s, background-color 0.3s;
+  display: block;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button-list a:hover {
+  background-color: #5a91d6;
+  transform: scale(1.05);
+}
