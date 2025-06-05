@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis canciones favoritas</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="iconos/para la playlist.png">
+  <style>
+    aside {
+    display: flex;
+    flex-direction: column;
+    width: 200px ;
+    padding: 1rem;;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="duki.html">Álbumes de Duki</a></li>
+        <li><a href="juego.html">Juego</a></li>
+        <li><a href="canciones.html" class="activa">Mis canciones favoritas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="contenido-canciones">
+    <aside class="tabs">
+      <a href="#intro" class="activa">Sobre esta playlist</a>
+      <a href="#duki">Duki</a>
+      <a href="#ysy">Ysy a </a>
+      <a href="#Gracie">Gracie abrams</a>
+      <a href="#badbunny">Bad bunny</a>
+      <a href="#seven">Seven</a>
+    </aside>
+
+    <section>
+      <div id="intro" class="tab-content activa">
+        <h2>Sobre esta playlist 🎵</h2>
+        <p> Acá hice mi top 5 de canciones favoritas, organizadas por nombres de los artista. 
+          Me encanta la música, es algo que nunca me puede faltar en mi día a día. 
+          ¡Ojalá te guste alguna también!
+        </p>
+        
+        <img src="imagenes/recital.jpeg" alt="Foto de un resital" class="intro-img">
+      </div>
+      <div id="duki" class="tab-content">
+        <h2>Imperio </h2>
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qC1xMCtQD_s?si=ptziqE-K0WtjNK7S" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div id="ysy" class="tab-content">
+        <h2>Apunta de espada</h2>
+        <iframe src="https://youtu.be/uc8Fr6m_6qU?si=KPTws5lEBxme7L6x" allowfullscreen></iframe>
+      </div>
+
+      <div id="Gracie" class="tab-content">
+        <h2>That's so true</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W_YOJWZIjxo?si=It6CM-IHHk6_chRZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div id="badbunny" class="tab-content">
+        <h2>NUEVAYoL</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zAfrPjTvSNs?si=q_A0APzqJOTXOigv&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div id="seven" class="tab-content">
+        <h2>PARIS33</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oBfBv_dVb4w?si=51gy3KMNXHPTU2ms&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <div style="text-align: center; margin: 2rem;">
+    <a href="index.html" class="volver-btn">← Volver al inicio</a>
+  </div>
+
+  <script>
+    const links = document.querySelectorAll('.tabs a');
+    const contenidos = document.querySelectorAll('.tab-content');
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        links.forEach(l => l.classList.remove('activa'));
+        contenidos.forEach(c => c.classList.remove('activa'));
+
+        link.classList.add('activa');
+        const id = link.getAttribute('href');
+        document.querySelector(id).classList.add('activa');
+      });
+    });
+  </script>
+
+</body>
+</html>

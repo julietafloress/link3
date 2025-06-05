@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Voices & Rising</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>🎶 Top Voices & Rising</h1>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="/menu.html">Menú general</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="bienvenida">
+    <h2>"Donde las leyendas comparten cartel con los talentos del mañana" </h2>
+    <p>Julieta Flores</p>
+  </section>
+
+  <section class="sobre-mi" id="sobremi">
+    <div class="texto">
+      <h2>Sobre que se trata?</h2>
+      <p>¡Hola! Bienvenido a <b>Top Voices & Rising</b>, el rincón donde celebramos tanto a los grandes íconos como a los nuevos talentos que están sonando fuerte. </p>
+    </div>
+  </section>
+
+  <section id="entradas" class="contenedor-entradas">
+    <article class="entrada">
+      <img src="/blog/imagenes/emilia/emimernes0.JPG" alt="Emilia Mernes" />
+      <h3>Emilia Mernes</h3>
+      <time datetime="2025-05-05">05 de mayo de 2025</time>
+      <p>Emilia combina pop, reguetón y una estética muy propia. Su música me transmite fuerza y estilo. ¡Una de mis artistas favoritas!</p>
+      <a href="/blog/emilia/emilia.html" class="leer-mas">Leer más</a>
+    </article>
+
+    <article class="entrada">
+      <img src="/blog/imagenes/wos/wos.JPG" alt="WOS" />
+      <h3>WOS</h3>
+      <time datetime="2025-05-12">12 de mayo de 2025</time>
+      <p>Con letras intensas y una presencia escénica increíble, WOS representa lo mejor de la música urbana y el rock alternativo argentino.</p>
+      <a href="./wos/wos.html" class="leer-mas">Leer más</a>
+    </article>
+
+    <article class="entrada">
+      <img src="./imagenes/bad bunny/badbunny.JPG" alt="Bad Bunny" />
+      <h3>Bad Bunny</h3>
+      <time datetime="2025-05-19">19 de mayo de 2025</time>
+      <p>El conejo malo rompió todos los límites. Me encanta su versatilidad, sus letras únicas y cómo transforma lo popular en arte.</p>
+      <a href="./bad bunny/badbunny.html" class="leer-mas">Leer más</a>
+    </article>
+
+    <article class="entrada">
+      <img src="./imagenes/ramma/ramma.JPG" alt="Ramma artista emergente" />
+      <h3>Ramma</h3>
+      <time datetime="2025-05-26">26 de mayo de 2025</time>
+      <p>Ramma es un artista emergente con muchísimo potencial. Me gusta apoyar nuevos talentos y seguir sus pasos desde el comienzo.</p>
+      <a href="./ramma/ramma.html" class="leer-mas">Leer más</a>
+    </article>
+
+    <article class="entrada">
+      <img src="" alt="Seven Kayne" />
+      <h3>Seven Kayne</h3>
+      <time datetime="2025-06-02">02 de junio de 2025</time>
+      <p>.</p>
+      <a href="" class="leer-mas">Leer más</a>
+    </article>
+  </section>
+  
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <form action="#" method="post" class="form-contacto">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="tu@ejemplo.com">
+      </div>
+
+      <div class="campo">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué escribís?">
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje aquí..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar mensaje</button>
+    </form>
+  </section>
+ 
+  <footer>
+    <p>© 2025 Top Voices & Rising</p>
+  </footer>
+
+
+</body>
+</html>

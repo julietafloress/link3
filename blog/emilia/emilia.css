@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+header {
+  background:  #ec4899;              /* Fondo azul oscuro */
+  padding: 5px 0;                  /* Espacio vertical */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  position: sticky;                 /* Fijo al hacer scroll */
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #fce4ec;                   /* Rosado claro para contraste */
+  font-weight: 600;
+  font-family: 'Quicksand', sans-serif;
+  cursor: default;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #f472b6;       /* Rosado intenso al pasar */
+  color: #fff;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Si querés marcar el enlace activo, agregale la clase “active” en el HTML */
+nav a.active {
+  background-color: #fde5f2;       /* Rosado muy suave */
+  color: #1d4e89;                  /* Texto azul oscuro */
+}
+
+@media (max-width: 900px) {
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    gap: 18px;
+  }
+  nav a {
+    font-size: 0.95rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav h1 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #fce4ec, #fde5f2);
+  color: #222;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.15);
+}
+
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  color: #ec4899;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+h2 {
+  color: #ec4899;
+  font-size: 1.6em;
+  margin-top: 30px;
+  border-bottom: 2px solid #f472b6;
+  padding-bottom: 5px;
+}
+
+
+.text-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  gap: 20px;
+  width: 100%;
+}
+
+
+.text-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-block img {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+  height: auto;
+}
+
+.text-block img:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.8;
+  background-color: #fce7f3;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #ec4899;
+  width: 100%;
+}
+
+.galeria {
+  margin-top: 50px;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #ec4899;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.galeria-grid a {
+  text-decoration: none;
+  outline: none;
+}
+
+.galeria-grid img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.volver {
+  background-color: #f472b6;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.volver:hover {
+  background-color: #ec4899;
+}
+
+@media (max-width: 768px) {
+  .text-block,
+  .text-block.reverse {
+    flex-direction: column;
+  }
+
+  .text-block img {
+    width: 100%;
+  }
+}
+/* ===== Playlist – Emilia Mernes ===== */
+.playlist {
+  margin-top: 50px;
+}
+
+.playlist h2 {
+  text-align: center;
+  color: #ec4899;    /* Rosa principal de Emilia */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.playlist-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fce7f3; /* Fondo muy suave detrás del iframe */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.playlist-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* Responsive móvil: un solo video por fila */
+@media (max-width: 600px) {
+  .playlist-grid {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+}

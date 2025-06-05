@@ -1,0 +1,300 @@
+/* ------------------------------------------------ */
+/*         Reset y estilos base (tal cual antes)    */
+/* ------------------------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #eaf6ff;
+  color: #333;
+}
+
+/* ------------------------------------------------ */
+/*               Header / Navegación                */
+/* ------------------------------------------------ */
+header {
+  background-color: #b3d4fc;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav h1 {
+  font-size: 1.8em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d4e89;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+/* En pantallas muy angostas, el nav convertimos la lista en columna */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  nav li {
+    text-align: center;
+  }
+}
+
+/* ------------------------------------------------ */
+/*                 Sección Bienvenida               */
+/* ------------------------------------------------ */
+.bienvenida {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #d9edff;
+}
+
+/* ------------------------------------------------ */
+/*                   Sección Sobre mí               */
+/* ------------------------------------------------ */
+.sobre-mi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #f0f8ff;
+  gap: 30px;
+}
+
+.sobre-mi .texto {
+  max-width: 500px;
+}
+
+.sobre-mi h2 {
+  color: #1d4e89;
+  margin-bottom: 10px;
+}
+
+.sobre-mi p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.sobre-mi .foto img {
+  max-width: 280px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.sobre-mi .foto img:hover {
+  transform: scale(1.05);
+}
+
+/* En pantallas angostas apilamos texto y foto */
+@media (max-width: 768px) {
+  .sobre-mi {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+  .sobre-mi .texto,
+  .sobre-mi .foto {
+    width: 100%;
+    text-align: center;
+  }
+  .sobre-mi .foto img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* ------------------------------------------------ */
+/*                Sección Entradas                  */
+/* ------------------------------------------------ */
+.contenedor-entradas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+.entrada {
+  background-color: white;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.entrada img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.entrada h3 {
+  margin-bottom: 10px;
+  color: #1d4e89;
+}
+
+.entrada p {
+  font-size: 0.95em;
+  flex: 1; /* Para que el texto ocupe el espacio disponible */
+}
+
+.entrada:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Botón “Leer más” */
+.leer-mas {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: #1d4e89;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.leer-mas:hover {
+  background-color: #3c7dcf;
+  transform: translateY(-2px);
+}
+
+/* Ajuste en pantallas pequeñas: entradas a toda pantalla */
+@media (max-width: 768px) {
+  .contenedor-entradas {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .entrada {
+    width: 100%;
+    max-width: 500px; /* Limita el ancho mínimo para que no estire demasiado */
+  }
+}
+
+/* ------------------------------------------------ */
+/*                 Sección Contacto                 */
+/* ------------------------------------------------ */
+.contacto {
+  background-color: #d9edff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2em;
+  color: #1d4e89;
+  margin-bottom: 20px;
+}
+
+.form-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  text-align: left;
+}
+
+.form-contacto .campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contacto label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #164b81;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  padding: 10px;
+  border: 2px solid #b3d4fc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1em;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.form-contacto input:focus,
+.form-contacto textarea:focus {
+  outline: none;
+  border-color: #1d4e89;
+}
+
+.btn-enviar {
+  background-color: #1d4e89;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: #3c7dcf;
+  transform: translateY(-2px);
+}
+
+/* Ajuste del formulario en móvil */
+@media (max-width: 600px) {
+  .form-contacto {
+    padding: 0 10px;
+    gap: 15px;
+  }
+}
+
+/* ------------------------------------------------ */
+/*                   Footer                         */
+/* ------------------------------------------------ */
+footer {
+  background-color: #b3d4fc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.8em;
+    padding: 10px 0;
+  }
+}
