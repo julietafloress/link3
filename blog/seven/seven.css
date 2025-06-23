@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+header {
+  background: #13193d;             
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  width: 90%; max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #7f9cf5;                   /* Neón azul */
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #e0e7ff;                   /* Texto claro */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #4c51bf;        /* Azul violeta */
+  color: #fff;
+  transform: translateY(-2px);
+  outline: none;
+}
+
+nav a.active {
+  background-color: #2a2e5b;        /* Azul medio */
+  color: #7f9cf5;
+}
+
+@media (max-width: 900px) {
+  nav h1 { font-size: 1.5rem; }
+  nav ul { gap: 18px; }
+  nav a { font-size: 0.95rem; padding: 5px 8px; }
+}
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 10px; }
+  nav h1 { font-size: 1.4rem; }
+  nav ul { flex-direction: column; gap: 12px; width: 100%; text-align: center; }
+  nav a { display: block; width: 100%; padding: 10px 0; }
+}
+
+/* --- Estilos principales de SEVEN KAYNE --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0a0f2e;
+  color: #e0e7ff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a234a;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 50, 0.5);
+}
+
+h1 {
+  font-size: 3em;
+  color: #7f9cf5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #7f9cf5;
+  font-size: 1.6em;
+  margin-top: 30px;
+  border-bottom: 2px solid #4c51bf;
+  padding-bottom: 5px;
+}
+
+.text-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.text-block.reverse { flex-direction: row-reverse; }
+
+.text-block img {
+  width: 45%;
+  max-width: 25%;
+  border-radius: 10%;
+  border: 2px solid #4c51bf;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.text-block img:hover { transform: scale(1.05); }
+
+.text {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.8;
+  background-color: #13193d;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #7f9cf5;
+}
+
+.playlist {
+  margin-top: 50px;
+}
+
+.playlist h2 {
+  text-align: center;
+  color: #7f9cf5;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.playlist-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Relación 16:9 */
+  overflow: hidden;
+  border-radius: 15%;  
+  background-color: #13193d;
+  
+}
+
+.playlist-item iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.galeria {
+  margin-top: 50px;
+}
+
+.galeria h2 {
+  text-align: center;
+  color: #7f9cf5;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.galeria-grid a img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-grid a img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 12px rgba(0,0,50,0.3);
+}
+
+.volver {
+  display: inline-block;
+  background-color: #4c51bf;
+  color: #e0e7ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.volver:hover {
+  background-color: #2a2e5b;
+}
+
+@media (max-width: 768px) {
+  .text-block,
+  .text-block.reverse { flex-direction: column; text-align: center; }
+  .text-block img { width: 100%; }
+  .playlist-grid { flex-direction: column; }
+}  

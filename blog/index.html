@@ -13,9 +13,9 @@
     <nav>
       <h1>🎶 Top Voices & Rising</h1>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mí</a></li>
-        <li><a href="/menu.html">Menú general</a></li>
+        <li><a href="/blog/index.html">Inicio</a></li>
+        <li><a href="/blog/sobre mi.html" class="active">Sobre mí</a></li>
+        <li><a href="/link3/menu.html">Menú general</a></li>
       </ul>
     </nav>
   </header>
@@ -30,6 +30,10 @@
       <h2>Sobre que se trata?</h2>
       <p>¡Hola! Bienvenido a <b>Top Voices & Rising</b>, el rincón donde celebramos tanto a los grandes íconos como a los nuevos talentos que están sonando fuerte. </p>
     </div>
+  </section>
+
+  <section class="artistas-destacados">
+    <h2>✨ Conocé más sobre los artistas</h2>
   </section>
 
   <section id="entradas" class="contenedor-entradas">
@@ -66,41 +70,88 @@
     </article>
 
     <article class="entrada">
-      <img src="" alt="Seven Kayne" />
+      <img src="./imagenes/seven/seven4.JPG" alt="Seven Kayne" />
       <h3>Seven Kayne</h3>
       <time datetime="2025-06-02">02 de junio de 2025</time>
-      <p>.</p>
-      <a href="" class="leer-mas">Leer más</a>
+      <p>Seven Kayne es un artista argentino que fusiona rap crudo con sintetizadores oscuros y beats electrónicos.</p>
+      <a href="./seven/seven.html" class="leer-mas">Leer más</a>
     </article>
   </section>
-  
-  <section class="contacto" id="contacto">
-    <h2>Contacto</h2>
-    <form action="#" method="post" class="form-contacto">
-      <div class="campo">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
-      </div>
 
-      <div class="campo">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="tu@ejemplo.com">
-      </div>
-
-      <div class="campo">
-        <label for="asunto">Asunto</label>
-        <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué escribís?">
-      </div>
-
-      <div class="campo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje aquí..."></textarea>
-      </div>
-
-      <button type="submit" class="btn-enviar">Enviar mensaje</button>
-    </form>
+  <section class="eventos" id="eventos">
+  <div class="contenedor-eventos">
+    <h2>🎤 Próximos Conciertos y Eventos</h2>
+    <div class="tabla-eventos">
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Artista</th>
+            <th>Ciudad</th>
+            <th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>25/06/2025</td><td>Emilia Mernes</td><td>Buenos Aires</td><td>Teatro Gran Rex</td></tr>
+          <tr><td>10/07/2025</td><td>WOS</td><td>Madrid</td><td>La Riviera</td></tr>
+          <tr><td>15/07/2025</td><td>Bad Bunny</td><td>Miami</td><td>FTX Arena</td></tr>
+          <tr><td>30/07/2025</td><td>Ramma</td><td>Ciudad de México</td><td>Foro Indie Rocks</td></tr>
+          <tr><td>05/08/2025</td><td>TINI</td><td>Rosario</td><td>Teatro Broadway</td></tr>
+          <tr><td>20/08/2025</td><td>Paulo Londra</td><td>Córdoba</td><td>Orfeo Superdome</td></tr>
+          <tr><td>01/09/2025</td><td>Taylor Swift</td><td>Buenos Aires</td><td>Estadio Monumental</td></tr>
+          <tr><td>15/09/2025</td><td>Coldplay</td><td>Santiago de Chile</td><td>Estadio Nacional</td></tr>
+          <tr><td>30/09/2025</td><td>Billie Eilish</td><td>México DF</td><td>Pepsi Center</td></tr>
+          <tr><td>10/10/2025</td><td>Ed Sheeran</td><td>Montevideo</td><td>Antel Arena</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   </section>
- 
+
+
+
+  <section class="suscripcion" id="suscripcion">
+    <h2>¡Suscribite para no perderte nada!</h2>
+    <form action="#" method="post" class="form-suscripcion">
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Tu mejor email" 
+        required
+    />
+      <button type="submit">Suscribirme</button>
+    </form>
+    <p class="suscripcion-info">Recibí novedades y nuevas entradas en tu bandeja de entrada.</p>
+  </section>
+
+
+  <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <form action="#" method="post" class="form-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+        </div>
+
+        <div class="campo">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="tu@ejemplo.com">
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué escribís?">
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribí tu mensaje aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+      </form>
+  </section>
+
   <footer>
     <p>© 2025 Top Voices & Rising</p>
   </footer>

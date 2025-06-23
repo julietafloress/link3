@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="/portfolio/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Julieta</h1>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../sobre-mi.html">Sobre mí</a></li>
+                <li><a href="tarea.html">Proyectos</a></li>
+                <li><a href="../habilidades.html">Habilidades</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tareas">
+            <h2>Lista de Tareas</h2>
+            <div class="tarea-form">
+                <input type="text" id="nuevaTarea" placeholder="Agregar nueva tarea">
+                <button onclick="agregarTarea()">Agregar</button>
+            </div>
+            <ul id="listaTareas"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Julieta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/tarea.js"></script>
+</body>
+</html>

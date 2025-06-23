@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora - Portfolio</title>
+    <link rel="stylesheet" href="/portfolio/style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Julieta</h1>
+         <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../sobre-mi.html">Sobre mí</a></li>
+                <li><a href="calculadora.html">Proyectos</a></li>
+                <li><a href="../habilidades.html">Habilidades</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <main>
+    <section class="calculadora">
+        <h2>Calculadora Básica</h2>
+        <div class="calc-container">
+            <input type="text" id="pantalla" readonly>
+            <div class="botones">
+                <button onclick="borrar()">C</button>
+                <button onclick="insertar('/')">÷</button>
+                <button onclick="insertar('*')">×</button>
+                <button onclick="borrarUno()">⌫</button>
+                <button onclick="insertar('7')">7</button>
+                <button onclick="insertar('8')">8</button>
+                <button onclick="insertar('9')">9</button>
+                <button onclick="insertar('-')">−</button>
+                <button onclick="insertar('4')">4</button>
+                <button onclick="insertar('5')">5</button>
+                <button onclick="insertar('6')">6</button>
+                <button onclick="insertar('+')">+</button>
+                <button onclick="insertar('1')">1</button>
+                <button onclick="insertar('2')">2</button>
+                <button onclick="insertar('3')">3</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="insertar('0')" class="cero">0</button>
+                <button onclick="insertar('.')">.</button>
+             </div>
+        </div>
+    </section>
+
+
+    </main>
+
+    <footer>
+    <p>© 2025 Julieta. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/calculadora.js"></script>
+</body>
+</html>

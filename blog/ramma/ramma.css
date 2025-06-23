@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
-
-/* --- Menú adaptado a la paleta de Ramma (rojos) --- */
-
 header {
-  background: #660000;              /* Rojo medio / oscuro */
+  background: #660000;              
   padding: 5px 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   position: sticky;
@@ -22,7 +19,7 @@ nav {
 
 nav h1 {
   font-size: 1.8rem;
-  color: #ffe6e6;                   /* Rojo clarito / rosado pálido */
+  color: #ffe6e6;                   
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
   cursor: default;
@@ -36,7 +33,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #ffdede;                   /* Rojo muy tenue para texto */
+  color: #ffdede;                   
   font-size: 1rem;
   font-weight: 500;
   padding: 6px 10px;
@@ -46,14 +43,14 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  background-color: #ff4d4d;        /* Rojo intenso para hover */
+  background-color: #ff4d4d;        
   color: #ffffff;
   transform: translateY(-2px);
   outline: none;
 }
 
 nav a.active {
-  background-color: #ff9999;        /* Rojo suave para activo */
+  background-color: #ff9999;       
   color: #660000;
 }
 
@@ -273,7 +270,7 @@ h2 {
   width: 100%;
   padding-bottom: 56.25%; /* Relación 16:9 */
   overflow: hidden;
-  border-radius: 50%;     /* Circular para coherencia con fotos */
+  border-radius: 15%;     /* Circular para coherencia con fotos */
   background-color: #550000; /* Rojo oscuro detrás del iframe */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -285,7 +282,7 @@ h2 {
   width: 100%;
   height: 100%;
   border: 0;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 /* Responsive móvil: un solo video por fila */

@@ -298,3 +298,355 @@ footer {
     padding: 10px 0;
   }
 }
+
+/* ===== Contenedor principal ===== */
+.sobre-mi-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ===== Bloques de texto + foto ===== */
+.sobre-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+/* Alterna lado foto/texto */
+.sobre-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.sobre-block .text {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.sobre-block .photo img {
+  width: 100%;
+  max-width: 280px; /* Antes estaba en 400px */
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* opcional: toque estético */
+}
+
+
+.sobre-block .photo img:hover {
+  transform: scale(1.03);
+}
+
+/* Lista de hobbies */
+.lista-hobbies {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.lista-hobbies li {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+/* ===== Playlist Spotify ===== */
+.spotify-playlist {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.spotify-playlist h2 {
+  color: #1d4e89;   /* Azul principal */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* El iframe ya ocupa 100% del contenedor */
+.spotify-playlist iframe {
+  max-width: 660px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== Responsive (pantallas < 768px) ===== */
+@media (max-width: 768px) {
+  .sobre-block,
+  .sobre-block.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .sobre-block .photo img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+/* ===== Calendario de Conciertos & Eventos ===== */
+.calendario {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px 40px;
+}
+
+.calendario h2 {
+  text-align: center;
+  color: #1d4e89;        /* Azul principal */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.calendario table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendario th,
+.calendario td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.calendario th {
+  background-color: #b3d4fc;  /* Azul claro */
+  color: #1d4e89;
+  font-weight: 600;
+}
+
+.calendario tr:hover > td {
+  background-color: #eaf6ff;  /* Hover suave */
+}
+
+/* Responsive: scroll horizontal en móvil */
+@media (max-width: 768px) {
+  .calendario table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+/* ===== Encintas & Quizzes ===== */
+.encuestas-quiz {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px 40px;
+}
+
+.encuestas-quiz h2 {
+  text-align: center;
+  color: #1d4e89;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Poll */
+.poll {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.poll h3 {
+  margin-bottom: 15px;
+  color: #1d4e89;
+}
+
+.poll label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.poll button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #1d4e89;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.poll button:hover {
+  background: #3c7dcf;
+}
+
+.poll-result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1d4e89;
+}
+
+/* Quiz */
+.quiz {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quiz h3 {
+  margin-bottom: 15px;
+  color: #1d4e89;
+}
+
+.question-block {
+  margin-bottom: 20px;
+}
+
+.question-block p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.question-block label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.quiz button {
+  padding: 8px 16px;
+  background: #1d4e89;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quiz button:hover {
+  background: #3c7dcf;
+}
+
+.quiz-result {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #1d4e89;
+}
+
+/* ===== Sección Suscripción ===== */
+.suscripcion {
+  background-color: #d9edff;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 60px 0 40px;
+  border-radius: 12px;
+}
+
+.suscripcion h2 {
+  font-size: 1.8rem;
+  color: #1d4e89;
+  margin-bottom: 20px;
+}
+
+.form-suscripcion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-suscripcion input[type="email"] {
+  padding: 10px 15px;
+  font-size: 1em;
+  border: 2px solid #b3d4fc;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 80%;
+  transition: border-color 0.3s;
+}
+
+.form-suscripcion input[type="email"]:focus {
+  outline: none;
+  border-color: #1d4e89;
+}
+
+.form-suscripcion button {
+  padding: 10px 20px;
+  background-color: #1d4e89;
+  color: #fff;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-suscripcion button:hover {
+  background-color: #3c7dcf;
+  transform: translateY(-2px);
+}
+
+.suscripcion-info {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.eventos {
+  background-color: #f0f8ff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.eventos h2 {
+  color: #1d4e89;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contenedor-eventos {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabla-eventos table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabla-eventos th,
+.tabla-eventos td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-eventos th {
+  background-color: #b3d4fc;
+  color: #1d4e89;
+}
+
+.tabla-eventos tr:hover > td {
+  background-color: #eaf6ff;
+}
+
+@media (max-width: 768px) {
+  .tabla-eventos table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.artistas-destacados {
+  background-color: #d9edff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-radius: 12px;
+}
+
+.artistas-destacados h2 {
+  font-size: 1.8rem;
+  color: #1d4e89;
+  margin-bottom: 0;
+}
