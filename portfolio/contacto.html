@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contacto - Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/contacto.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Julieta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<nav>
-<h1>Julieta</h1>
-<ul>
-<li><a href="index.html">Inicio</a></li>
-<li><a href="sobre-mi.html">Sobre mí</a></li>
-<li><a href="proyectos/calculadora.html">Proyectos</a></li>
-<li><a href="habilidades.html">Habilidades</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-</ul>
-</nav>
-</header>
+  <header>
+    <nav>
+      <h1>Julieta</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="proyectos/calculadora.html">Proyectos</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-<section class="contacto">
-<h2>Contacto</h2>
-<p>¿Querés escribirme? Completá el siguiente formulario:</p>
-<form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
-<input type="text" name="nombre" placeholder="Tu nombre" required>
-<input type="email" name="email" placeholder="Tu email" required>
-<textarea name="mensaje" placeholder="Escribí tu mensaje..." required></textarea>
-<button type="submit">Enviar</button>
-<input type="hidden" name="_next" value="https://tu-portfolio.github.io/gracias.html">
-</form>
-</section>
-</main>
+  <main>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Querés escribirme? Completá el formulario y te responderé pronto.</p>
+      <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST" class="form-contacto">
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
 
-<footer>
-<p>© 2025 Julieta. Todos los derechos reservados.</p>
-</footer>
+        <div class="campo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+        <input type="hidden" name="_next" value="https://tu-portfolio.github.io/gracias.html">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Julieta. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

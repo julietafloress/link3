@@ -1,40 +1,67 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sobre mí - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí - Julieta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+  <header>
     <nav>
-        <h1>Julieta</h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="sobre-mi.html">Sobre mí</a></li>
-            <li><a href="proyectos/calculadora.html">Proyectos</a></li>
-            <li><a href="habilidades.html">Habilidades</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <h1>Julieta</h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="proyectos/calculadora.html">Proyectos</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
     </nav>
-    </header>
+  </header>
 
-    <main>
-    <section class="sobre-mi">
-        <h2>Sobre mí</h2>
-        <div class="contenido">
-            <img src="assets/img/foto-julieta.jpg" alt="Foto de Julieta">
-            <div class="texto">
-                <p>Hola! Soy Julieta, estudiante de programación con orientación en desarrollo web. Me encanta diseñar y crear sitios modernos, interactivos y accesibles. Disfruto aprender cosas nuevas y aplicar lo aprendido en proyectos creativos.</p>
-                <p>Mis intereses incluyen el diseño UI/UX, la inteligencia artificial aplicada al frontend y la tecnología educativa. Busco seguir creciendo profesionalmente en el mundo digital.</p>
-            </div>
-        </div>
+  <main class="sobre-mi-container">
+    <h2 class="section-title">Sobre mí</h2>
+
+    <div class="sobre-block">
+      <div class="photo">
+        <img src="assets/img/julieta.jpg" alt="Foto de Julieta">
+      </div>
+      <div class="text">
+        <p>Hola, soy Julieta. Soy estudiante de programación y desarrollo web. Me apasiona crear interfaces limpias, accesibles y funcionales, combinando creatividad con lógica.</p>
+        <p>Mi objetivo es trabajar en proyectos que generen impacto positivo, priorizando la usabilidad y la experiencia del usuario.</p>
+      </div>
+    </div>
+
+    <div class="sobre-block reverse">
+      <div class="photo">
+        <img src="assets/img/profesional.jpg" alt="Foto profesional genérica">
+      </div>
+      <div class="text">
+        <p>Además de mi formación técnica, valoro mucho las habilidades blandas. Me considero una persona proactiva, comprometida con el aprendizaje constante y con buenas capacidades de trabajo en equipo.</p>
+        <p>Estoy interesada en áreas como el desarrollo frontend, diseño UI/UX y la tecnología educativa.</p>
+      </div>
+    </div>
+
+    <section class="soft-skills">
+      <h3 class="section-title">Habilidades blandas</h3>
+      <ul>
+        <li>✨ Comunicación efectiva</li>
+        <li>🤝 Trabajo colaborativo</li>
+        <li>🧠 Pensamiento analítico</li>
+        <li>⏰ Gestión del tiempo</li>
+        <li>💡 Creatividad y resolución de problemas</li>
+      </ul>
     </section>
-    </main>
 
-    <footer>
-    <p>© 2025 Julieta. Todos los derechos reservados.</p>
-    </footer>
+    <section class="motivacion">
+      <h3 class="section-title">¿Qué me motiva?</h3>
+      <p>Disfruto aprender cosas nuevas, participar en proyectos desafiantes y crecer tanto a nivel técnico como humano. Me entusiasma trabajar en equipo, compartir ideas y generar soluciones que puedan mejorar la vida de las personas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Julieta. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
