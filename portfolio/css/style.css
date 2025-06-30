@@ -407,3 +407,304 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    .tareas {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #d9edff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+    .tareas h2 {
+      text-align: center;
+      color: #1d4e89;
+      margin-bottom: 20px;
+    }
+
+    .tarea-form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .tarea-form input {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      border: 2px solid #b3d4fc;
+      font-size: 1em;
+    }
+
+    .tarea-form button {
+      background-color: #1d4e89;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .tarea-form button:hover {
+      background-color: #3c7dcf;
+      transform: translateY(-2px);
+    }
+
+    ul#listaTareas {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul#listaTareas li {
+      background: white;
+      margin-bottom: 12px;
+      padding: 12px;
+      border-left: 5px solid #64b5f6;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeIn 0.3s ease;
+    }
+
+    ul#listaTareas li.completada {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    ul#listaTareas li button {
+      background: none;
+      border: none;
+      color: #d32f2f;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #eaf6ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #b3d4fc;
+      padding: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    nav h1 {
+      font-size: 1.8em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1d4e89;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+      nav li {
+        text-align: center;
+      }
+    }
+
+    .bienvenida {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #d9edff;
+    }
+
+    .bienvenida img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .bienvenida p.descripcion {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .trabajos-recientes {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .trabajos-recientes h3 {
+      color: #1d4e89;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .galeria-proyectos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .galeria-proyectos a {
+      display: block;
+      width: 250px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: #1d4e89;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .galeria-proyectos a:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .galeria-proyectos a:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .galeria-proyectos a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #b3d4fc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        font-size: 0.8em;
+        padding: 10px 0;
+      }
+    }
+
+    .animate-tachado {
+  animation: tachar 0.4s ease forwards;
+}
+
+@keyframes tachar {
+  from {
+    text-decoration: none;
+    opacity: 1;
+  }
+  to {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+}
+
+.sonidos {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 30px 20px;
+      background-color: #d9edff;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .sonidos h2 {
+      color: #1d4e89;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .botonera {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+
+    .boton-sonido {
+      padding: 20px;
+      background-color: #1d4e89;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .boton-sonido:hover {
+      background-color: #3c7dcf;
+      transform: translateY(-2px);
+    }
+
+    .rebote {
+  animation: rebote 0.3s ease;
+}
+
+@keyframes rebote {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

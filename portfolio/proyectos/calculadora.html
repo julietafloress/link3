@@ -56,28 +56,6 @@
     <p>&copy; 2025 Julieta. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    let pantalla = document.getElementById('pantalla');
-
-    function insertar(valor) {
-      pantalla.value += valor;
-    }
-
-    function borrar() {
-      pantalla.value = '';
-    }
-
-    function borrarUno() {
-      pantalla.value = pantalla.value.slice(0, -1);
-    }
-
-    function calcular() {
-      try {
-        pantalla.value = eval(pantalla.value);
-      } catch (e) {
-        pantalla.value = 'Error';
-      }
-    }
-  </script>
+  <script src="../js/calculadora.js"></script>
 </body>
 </html>

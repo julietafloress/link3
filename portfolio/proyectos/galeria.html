@@ -22,12 +22,13 @@
 
   <main>
     <section class="galeria">
-      <h2>Galería de Imágenes</h2>
+      <h2>Galería de Imágenes de mis vacacionens</h2>
       <div class="galeria-grid">
-        <img src="../assets/img/ia1.jpg" alt="Imagen IA 1" onclick="abrirLightbox(this)">
-        <img src="../assets/img/ia2.jpg" alt="Imagen IA 2" onclick="abrirLightbox(this)">
-        <img src="../assets/img/ia3.jpg" alt="Imagen IA 3" onclick="abrirLightbox(this)">
-        <img src="../assets/img/ia4.jpg" alt="Imagen IA 4" onclick="abrirLightbox(this)">
+        <img src="../assets/img/fto1.jpg" alt="New York" onclick="abrirLightbox(this)">
+        <img src="../assets/img/fto2.jpg" alt="Epcot - Orlando" onclick="abrirLightbox(this)">
+        <img src="../assets/img/fto3.jpg" alt="Orlando" onclick="abrirLightbox(this)">
+        <img src="../assets/img/fto4.jpg" alt="Punta Cana" onclick="abrirLightbox(this)">
+       <img src="../assets/img/fto5.jpg" alt="Punta Cana" onclick="abrirLightbox(this)">
       </div>
     </section>
 
@@ -40,17 +41,6 @@
     <p>&copy; 2025 Julieta. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    function abrirLightbox(imgElement) {
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      lightboxImg.src = imgElement.src;
-      lightbox.style.display = 'flex';
-    }
-
-    function cerrarLightbox() {
-      document.getElementById('lightbox').style.display = 'none';
-    }
-  </script>
+  <script src="../js/galeria.js"></script>
 </body>
 </html>
